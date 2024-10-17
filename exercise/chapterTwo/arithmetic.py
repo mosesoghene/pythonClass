@@ -1,0 +1,8 @@
+print("27.5 and 2 results for all arithmetic operators")
+print("Addition: ", 27.5 + 2)
+print("Subtraction: ", 27.5 - 2)
+print("Multiplication: ", 27.5 * 2)
+print("Exponent: ", 27.5 ** 2)
+print("Float Division: ", 27.5 / 2)
+print("Floor division: ", 27.5 // 2)
+print("Modulo: ", 27.5 % 2)
