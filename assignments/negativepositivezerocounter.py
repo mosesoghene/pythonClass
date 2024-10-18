@@ -15,4 +15,5 @@ while number_counter <= 5:
         positive_number += 1
     
     number_counter += 1
+print(f"There are {negative_counter} negative numbers\nThere are {positive_counter} positive numbers\nThere are {zero_counter} zero numbers\n")
 
