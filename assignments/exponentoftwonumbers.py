@@ -5,7 +5,7 @@ power_times = 1
 power = 1
 while power_times <= exponent:
     power = power * base
-    i += 1
+    power_times += 1
 
 print(f"{base} raised to the power of {exponent} => {power}")
 
