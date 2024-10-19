@@ -1,10 +1,13 @@
-first_number = float(input("Enter first number >> "))
-second_number = float(input("Enter second number >> "))
+base = float(input("Enter first number >> "))
+exponent = float(input("Enter second number >> "))
 
-sum_of_exponents = 0
+power_times = 1
+power = 1
+while power_times <= exponent:
+    power = power * base
+    i += 1
 
-while second_number > 0:
-    sum_of_exponents = first_number * first_number
-    second_number -= 1
+print(f"{base} raised to the power of {exponent} => {power}")
 
-print(f"{first_number} raised to the power of {second_number} => {sum_of_exponents}")
+
+
