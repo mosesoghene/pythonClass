@@ -7,5 +7,5 @@ month_duration = year_duration * 12
  
 monthly_payment = principal * monthly_rate * ((1 + monthly_rate) ** month_duration) / (((1 + monthly_rate) ** month_duration) - 1)
 
-print(f"Your monthly payment is ${monthly_payment:.2f}")
+print(f"Your monthly payment is ${monthly_payment:,.2f}")
 

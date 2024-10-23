@@ -8,3 +8,4 @@ while loop_counter <= 5:
 
 for graph_data in graph_lengths:
     print(graph_data, ":", "*" * graph_data)
+
