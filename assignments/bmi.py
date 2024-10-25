@@ -4,6 +4,6 @@ user_height = float(input("Enter weight in inches: "))
 weight = user_weight * 0.45359237
 height = user_height * 0.0254
 
-bmi = weight * (height ** 2)
-print("BMI is", bmi)
+bmi = weight / (height ** 2)
+print(f"BMI is {bmi:.4f}")
 
