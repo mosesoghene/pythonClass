@@ -1,4 +1,4 @@
-user_input = input("Input an alphabet >> ")
+user_input = input("Input an alphabet >> ").lower()
 vowels = "aeiou"
 
 if user_input.isalpha():
@@ -11,3 +11,4 @@ if user_input.isalpha():
         print(f"'{user_input}' is more than one letter. Expected 1 alphabet letter")
 else:
     print(f"'{user_input}' contains a non-alpahbet letter")
+
