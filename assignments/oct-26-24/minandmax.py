@@ -1,7 +1,7 @@
 import re
 
 
-numbers = input("Enter all numbers separated by a space i.e 12 -3 67 \n> ").split(" ")
+numbers= input("Enter all numbers separated by a space i.e 12 -3 67 \n> ").split(" ")
 
 
 def is_number(value) -> bool:
