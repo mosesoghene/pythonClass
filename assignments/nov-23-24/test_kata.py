@@ -142,3 +142,147 @@ class TestAlternateListFunction(TestCase):
     
     def test_that_function_raises_error_no_argument(self):
         self.assertRaises(TypeError, alternate_list)
+
+
+class TestGetListOfFunction(TestCase):
+    def test_that_function_exists(self):
+        list_of(2345)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = list_of(2345)
+        expected = [2,3,4,5]
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, list_of, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, list_of)
+
+
+class TestIsEvenFunction(TestCase):
+    def test_that_function_exists(self):
+        is_even(2345)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = is_even(2345)
+        expected = False
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, is_even, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, is_even)
+
+
+class TestSubtractFunction(TestCase):
+    def test_that_function_exists(self):
+        subtract(3,7)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = subtract(3, 7)
+        expected = 4
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, subtract, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, subtract)
+
+
+class TestDivideFunction(TestCase):
+    def test_that_function_exists(self):
+        divide(3,7)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = divide(3, 0)
+        expected = 0
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, divide, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, divide)
+
+
+class TestFactorOfFunction(TestCase):
+    def test_that_function_exists(self):
+        factor_of(10)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = factor_of(10)
+        expected = 4
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, factor_of, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, factor_of)
+
+
+class TestIsSquareFunction(TestCase):
+    def test_that_function_exists(self):
+        is_square(25)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = is_square(25)
+        expected = True
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, is_square, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, is_square)
+        
+
+class TestIsPlaindromeFunction(TestCase):
+    def test_that_function_exists(self):
+        is_int_palindrome(54145)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = is_int_palindrome(54145)
+        expected = True
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, is_int_palindrome, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, is_int_palindrome)
+
+
+class TestFactorialOfFunction(TestCase):
+    def test_that_function_exists(self):
+        factorial_of(5)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = factorial_of(5)
+        expected = 120
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, factorial_of, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, factorial_of)
+        
+        
+class TestSquareOfFunction(TestCase):
+    def test_that_function_exists(self):
+        square_of(5)
+    
+    def test_that_function_returns_correct_result(self):
+        actual = square_of(5)
+        expected = 25
+        self.assertEqual(actual, expected)
+    
+    def test_that_fucntion_raises_error_wrong_arg_type(self):
+        self.assertRaises(TypeError, square_of, '')
+    
+    def test_that_function_raises_error_no_argument(self):
+        self.assertRaises(TypeError, square_of)

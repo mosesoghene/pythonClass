@@ -61,3 +61,67 @@ def alternate_list(array_a, array_b):
             if i < len(array_b): result.append(array_b[i])
         return result
     raise TypeError
+
+def list_of(number):
+    if type(number) is int:
+        result = [int(i) for i in str(number)]        
+        return result
+    raise TypeError
+    
+def is_even(number):
+    if type(number) is int:
+        result = True if number % 2 == 0 else False       
+        return result
+    raise TypeError
+
+def is_prime(number):
+    if type(number) is int:
+        if number <= 1: return False
+        for i in range(2, number):
+            if number % i == 0: return False
+        return True
+    raise TypeError
+
+def subtract(x, y):
+    if [type(x), type(y)] == [int, int]: return abs(x - y)
+    raise TypeError
+
+def divide(x, y):
+    try: 
+        return x / y if y != 0 else 0
+    except TypeError:
+        raise TypeError
+
+def factor_of(number):
+    try:
+        factors = 0
+        for i in range(1, number+1):
+            if number % i == 0: factors += 1
+        return factors
+    except TypeError:
+        raise TypeError
+
+def is_square(number):
+    try:
+        from math import sqrt
+        return True if (int(sqrt(number)) ** 2) == number else False
+    except TypeError:
+        raise TypeError
+
+def is_int_palindrome(number):
+    if type(number) is int:
+        return True if str(number) == str(number)[::-1] else False
+    raise TypeError
+
+
+def factorial_of(number):
+    if type(number) is int:
+        factorial =  1
+        for i in range(number, 0, -1): factorial *= i
+        return factorial
+    raise TypeError
+
+def square_of(number):
+    if type(number) in [int, float]: return number * number
+    raise TypeError
+
