@@ -32,3 +32,32 @@ def get_even_elements(array):
         if len(array) == 0: raise IndexError
         return [array[i] for i in range(1, len(array), 2) ]
     raise TypeError
+    
+def get_running_sum(array):
+    if type(array) is list:        
+        if len(array) == 0: raise IndexError
+        total = 0
+        for i in array: 
+            if type(i) in [int, float]: total += i
+        return total
+    raise TypeError
+
+def is_palindrome(string):
+    if type(string) is str:        
+        if len(string) == 0: raise IndexError
+        return True if string == str(string[::-1]) else False
+    raise TypeError
+
+def join_list(array_a, array_b):
+    if [type(array_a),type(array_a)]  == [list, list]:
+        return array_a + array_b
+    raise TypeError
+    
+def alternate_list(array_a, array_b):
+    if [type(array_a),type(array_a)]  == [list, list]:
+        result = []
+        for i in range(max([len(array_a), len(array_b)])):
+            if i < len(array_a): result.append(array_a[i])
+            if i < len(array_b): result.append(array_b[i])
+        return result
+    raise TypeError
