@@ -28,7 +28,7 @@ def view_products():
 
 def add_to_cart(cart, product):
     if product in cart['names']:
-        cart['names'].append(product.capitalize())
+        cart['names'].append(product)
         cart['prices'].append(products['prices'][products['names'].index(product.lower())])
         print(f"{product.upper()} has been added to cart \n")
     return cart
@@ -36,7 +36,7 @@ def add_to_cart(cart, product):
 def remove_from_cart(cart, product):
     if product in cart['names']:
         cart['names'].remove(product.capitalize())
-        cart['prices'].remove(products['prices'][products['names'].index(product.lower())])
+        cart['prices'].remove(cart['prices'][cart['names'].index(product.lower())])
         print(f"{product.upper()} has been removed from cart \n")
     else:
         print("\nItem not in cart")
