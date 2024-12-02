@@ -29,7 +29,7 @@ SEMICOLON STORE
 MAIN BRANCH
 LOCATION: 312 HERBERT MACAULAY WAY, YABA, LAGOS.
 TEL: 09876543213
-Date: {datetime.now()}
+Date: {datetime.now().strftime("%d-%b-%y %I:%M:S %p")}
 Cashier: {cashier_name}
 Customer's Name: {customer_name}
 """
