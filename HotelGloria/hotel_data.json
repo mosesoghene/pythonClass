@@ -1,0 +1,162 @@
+{
+    "rooms": [
+        {
+            "room_number": "101",
+            "room_type": "Single",
+            "price_per_night": 100,
+            "is_available": true,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "102",
+            "room_type": "Single",
+            "price_per_night": 100,
+            "is_available": true,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "103",
+            "room_type": "Single",
+            "price_per_night": 100,
+            "is_available": true,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "201",
+            "room_type": "Double",
+            "price_per_night": 150,
+            "is_available": false,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "202",
+            "room_type": "Double",
+            "price_per_night": 150,
+            "is_available": true,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "203",
+            "room_type": "Double",
+            "price_per_night": 150,
+            "is_available": true,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "301",
+            "room_type": "Suite",
+            "price_per_night": 250,
+            "is_available": false,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "302",
+            "room_type": "Suite",
+            "price_per_night": 250,
+            "is_available": true,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "303",
+            "room_type": "Suite",
+            "price_per_night": 250,
+            "is_available": true,
+            "needs_maintenance": false
+        },
+        {
+            "room_number": "304",
+            "room_type": "Suite",
+            "price_per_night": 250,
+            "is_available": true,
+            "needs_maintenance": false
+        }
+    ],
+    "bookings": [
+        {
+            "booking_reference": "b97cdd41",
+            "guest": {
+                "name": "Moses",
+                "phone_number": "09059367457",
+                "email": "moses@mail.com",
+                "stay_history": [
+                    {
+                        "booking_reference": "b97cdd41",
+                        "room_type": "Double",
+                        "check_in_date": "2025-01-17",
+                        "check_out_date": "2025-01-20",
+                        "total_payment": 450
+                    }
+                ]
+            },
+            "room": {
+                "room_number": "201",
+                "room_type": "Double",
+                "price_per_night": 150,
+                "is_available": false,
+                "needs_maintenance": false
+            },
+            "check_in_date": "2025-01-17",
+            "check_out_date": "2025-01-20",
+            "total_payment": 450,
+            "status": "upcoming"
+        },
+        {
+            "booking_reference": "70d6227c",
+            "guest": {
+                "name": "Christianah",
+                "phone_number": "1212121212",
+                "email": "c@mail.com",
+                "stay_history": [
+                    {
+                        "booking_reference": "70d6227c",
+                        "room_type": "Suite",
+                        "check_in_date": "2025-01-10",
+                        "check_out_date": "2025-01-12",
+                        "total_payment": 750.0
+                    }
+                ]
+            },
+            "room": {
+                "room_number": "301",
+                "room_type": "Suite",
+                "price_per_night": 250,
+                "is_available": false,
+                "needs_maintenance": false
+            },
+            "check_in_date": "2025-01-10",
+            "check_out_date": "2025-01-12",
+            "total_payment": 750.0,
+            "status": "upcoming"
+        }
+    ],
+    "guests": {
+        "moses@mail.com": {
+            "name": "Moses",
+            "phone_number": "09059367457",
+            "email": "moses@mail.com",
+            "stay_history": [
+                {
+                    "booking_reference": "b97cdd41",
+                    "room_type": "Double",
+                    "check_in_date": "2025-01-17",
+                    "check_out_date": "2025-01-20",
+                    "total_payment": 450
+                }
+            ]
+        },
+        "c@mail.com": {
+            "name": "Christianah",
+            "phone_number": "1212121212",
+            "email": "c@mail.com",
+            "stay_history": [
+                {
+                    "booking_reference": "70d6227c",
+                    "room_type": "Suite",
+                    "check_in_date": "2025-01-10",
+                    "check_out_date": "2025-01-12",
+                    "total_payment": 750.0
+                }
+            ]
+        }
+    }
+}

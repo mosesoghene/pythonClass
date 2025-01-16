@@ -37,9 +37,7 @@ while current_question_number <=TOTAL_QUESTION_NUMBERS:
 
 end_time = datetime.now()
 total_time = str(end_time - start_time).split(":")
-hour = int(total_time[0])
-minute = int(total_time[1])
-seconds = float(total_time[2])
+hour = int(total_time[0]);  minute = int(total_time[1]);  seconds = float(total_time[2])
 
 if hour > 0: hour * 60 * 60
 if minute > 0: minute * 60

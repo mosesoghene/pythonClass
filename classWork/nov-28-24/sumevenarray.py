@@ -50,7 +50,49 @@ def get_cube_root(numbers: list):
 
 def count_even(array):
     if type(array) in [list, tuple, set]: return len([i for i in array if (i % 2 == 0) ])
-    else: raise TypeError
+    raise TypeError
     
 
+def true_false_even_odds(array):
+    if type(array) in [list, tuple, set]: return [True  if (i % 2 == 0) else False for i in array ]
+    raise TypeError
 
+def capitalize_(array):
+    if type(array) in [list, tuple, set]: return [i.lower().capitalize() for i in array ]
+    raise TypeError
+
+def func_():
+    return [i for i in range(3, 31) if i % 3 == 0 ]
+
+def square_odds(array):
+    return [i**2 for i in array if i % 2 != 0 ]
+    
+
+def squares(number):
+    return list(map(lambda x: x * x, range(1, number+1)))
+
+def all_greater_than_ten(numbers):
+    if type(numbers) in [list, tuple, set]: return list(filter(lambda x: x > 10, numbers))
+    raise ValueError
+    
+def is_list_palindrome(array):
+    return list(map(lambda x: str(x) == str(x)[::-1], array))
+
+
+def sum_of(number):
+    return sum(map(lambda x: int(x), str(192374)))
+
+# list(map(lambda x: int(x), filter(lambda x: x.isnumeric(), "1a2b3c")))
+# ['madam', 'apple', 'racecar']
+print(all_greater_than_ten([1,5,12,15,8]) )
+
+
+def strip_vowels_in(array):
+    if type(array) is list:
+        return ["".join(filter(lambda x: x.lower() not in "aeiou", word )) for word in array]
+
+def pay_even_dict(number):
+    return {x: x ** 2 for x in range(1,number+1) if (x ** 2) % 2 == 0}
+
+
+print(strip_vowels_in(['Orange', 'apple', 'ice', 'Beans', 'Rice']))
