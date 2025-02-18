@@ -1,6 +1,4 @@
 class Stack:
-    _data_type = None
-
     def __init__(self, data_type, capacity: int):
         self._data_type = data_type
         self._capacity = capacity
@@ -34,6 +32,3 @@ class Stack:
     def peek(self):
         if self.is_empty(): raise IndexError("Stack is empty")
         return self._stack[-1]
-
-
-
