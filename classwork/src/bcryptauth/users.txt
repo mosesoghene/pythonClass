@@ -1,0 +1,3 @@
+email, password
+moses@email.com,$2b$12$KpNc3Ygf8csx3/X5/T7nc.MWmkkUnEny5/MuTzzKmyfTZvFthmA6m
+esther@semicolon.africa,$2b$12$vIADK5sbdQouW5INjwh4huJl4cZ.DZqdg1O75ZclvTCrZu74asVtu
