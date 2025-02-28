@@ -10,7 +10,7 @@ class Bank:
         self._sort_code = sort_code
         self._accounts: list[Account] = []
 
-    def create_account(self, first_name: str, last_name: str, password: str, ):
+    def create_account(self, first_name: str, last_name: str, password: str):
         hashed_password = self.__encrypt(password)
         account_number = self.__generate_account_number()
         new_account = Account(first_name, last_name, hashed_password, account_number)
