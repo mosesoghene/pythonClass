@@ -49,5 +49,4 @@ class TestTicTacToe(unittest.TestCase):
     def test_is_first_player_turn(self):
         self.assertTrue(self.game.is_first_player_turn)
 
-if __name__ == '__main__':
-    unittest.main()
+if __name__ == '__main__': unittest.main()
